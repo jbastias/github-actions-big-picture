@@ -15,6 +15,7 @@ jobs:
     
 
   build:
+    needs: hello-world-job
     runs-on: macos-latest
   
     steps:
