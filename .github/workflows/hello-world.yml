@@ -1,9 +1,6 @@
-hello-world
+name: hello-world
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   hello-world-job:
