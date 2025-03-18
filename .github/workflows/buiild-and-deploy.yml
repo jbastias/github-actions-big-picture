@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    runs-on: debian-11
+    runs-on: macos-latest
   
     steps:
       - name: checkout code
@@ -18,7 +18,7 @@ jobs:
     
   test:
     needs: build
-    runs-on: debian-11
+    runs-on: macos-latest
   
     steps:
       - name: checkout code
