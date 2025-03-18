@@ -1,14 +1,17 @@
 hello-world
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   hello-world-job:
 
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: my first workflow
-    - uses: actions/checkout@v4
-    - run: echo $"(cat hello_world.txt)"
+    steps:
+      - name: my first workflow  
+      - uses: actions/checkout@v4
+      - run: echo $"(cat hello_world.txt)"
     
