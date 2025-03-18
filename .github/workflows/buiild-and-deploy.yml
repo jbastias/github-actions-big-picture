@@ -3,6 +3,17 @@ name: build-test-deploy
 on: push
 
 jobs:
+
+  hello-world-job:
+
+    runs-on: macos-latest
+
+    steps:
+      - name: my first workflow  
+        uses: actions/checkout@v4
+      - run: echo $"(cat hello_world.txt)"
+    
+
   build:
     runs-on: macos-latest
   
